@@ -1,5 +1,5 @@
 # PONDERING PATHS
-## The Root
+
 
 > [!NOTE]
 > Points to be noted:-
@@ -9,6 +9,31 @@
 >You can invoke a program by providing its path on the command line.
 > 
 >Invoking a program doesnt mean opening a file, it means running a program.
+>
+> **Absolute Path:**
+    An absolute path is the full path to a file or directory from the root directory `/`, which is the topmost directory in the Linux file system.
+    It always starts with a `/`, indicating the root of the file system.
+    It provides the complete address of a file or directory, regardless of the current working directory.
+>
+>**Relative Path:**
+    A relative path refers to a file or directory based on the current working directory (the directory you are currently in).
+    It does not start with a `/`, but instead relies on the current location in the file system.
+    Special symbols are often used:
+        `.` (dot) refers to the current directory.
+        `..` (double dot) refers to the parent directory (one level up).
+>   
+>  1. **Explicit Relative Path:**        
+  An explicit relative path is when you use symbols like `.` or `..` to make it clear that you're working with relative paths based on your current directory or its parent. `./`: Explicitly refers to the current directory. `../`: Explicitly refers to the parent directory.
+>
+>  2. **Implicit Relative Path:**
+>An implicit relative path does not explicitly indicate whether the path is relative, but it's understood to be based on the current directory >because there are no leading slashes (/) or dot symbols (`./`, `../`). The assumption is that the file or directory is in the current location.
+>
+> A **naked path** refers to a path that is written without specifying whether it is an absolute or relative path, usually just the name of a file or directory without any preceding `/` (root directory) or `./` (current directory) indicators. It implicitly assumes that the file or directory is in the current working directory.
+
+
+## The Root
+
+
 
 Here, we invoke theprogram by using the `$ /pwn` command.
 
