@@ -114,3 +114,32 @@ A directory can be made using the mkdir command. Thus we make the directory usin
 ![image](https://github.com/user-attachments/assets/7479d80f-7a44-4d90-bf1b-c953130dc988)
 
 ## finding files
+
+> [!TIP]
+> The `find` command is a powerful utility for searching files and directories within a filesystem. It allows us to locate files based on specific criteria, like name, size, modification date, etc.
+> ![image](https://github.com/user-attachments/assets/8bb8371b-4e3d-4583-9a0b-9c09b313191d)
+> we can also specify the file type in the command . type f specifies that the we need regular files, it ignores other directories and special type files.
+
+
+In this challenge, we need to find a file with a specific name. To locate the file, we can use the `find` command with options to search for files with a given name.
+
+![image](https://github.com/user-attachments/assets/5082a14a-8c30-41b4-a285-bddfe9962c33)
+
+
+![image](https://github.com/user-attachments/assets/12de9aa3-4d40-45de-8e0d-a0634c96c5c5)
+
+
+## linking files
+
+> [!TIP]
+> In a filesystem, a file is, conceptually, an address at which the contents of that file live. A hard link is an alternate address that indexes that data --- accesses to the hard link and accesses to the original file are completely identical, in that they immediate yield the necessary data. A soft/symbolic link, instead, contains the original file name. When you access the symbolic link, Linux will realize that it is a symbolic link, read the original file name, and then (typically) automatically access that file. In most cases, both situations result in accessing the original data, but the mechanisms are different.
+
+
+In this challenge we must link the /flag file which consists the flag and the /not-the-flag file which is excecuted on the command.
+So linking these files using ln -s (for symbolic link)  and excecuting given command we get the flag.
+
+![image](https://github.com/user-attachments/assets/52bf9538-faaa-4f88-8386-69db3f243df4)
+
+
+
+
