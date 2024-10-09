@@ -51,6 +51,21 @@ Using the `/challenge/run` command and providing the path to files along with th
 
 ## Mixing Globs
 
+First we cd to /challenge/files directory. Then we can see what all files it contains using the ls command. It shows various files with different names. Since this task expects us to use different globbing methods, we can use the `[]` globbing to specify the first alphabets of the given words and the use `* ` to specify the rest of the word since no other words exist with the same first alphabets. Thus we use the command `$ /challenge/run [cep]*`  to get the flag.
+
+![image](https://github.com/user-attachments/assets/ba2814c7-6e42-42cd-a391-90117a67faf0)
+
+## Exclusionary Globbing
+
+> [!TIP]
+> If the first character in the brackets is a ! or (in newer versions of bash) a ^, the glob inverts, and that bracket instance matches characters that aren't listed.
+>
+> ![image](https://github.com/user-attachments/assets/13fc5b42-b316-48e9-bccf-73447421fb76)
+> The ! character has a different special meaning in bash when it's not the first character of a [] glob, so keep that in mind if things stop making sense! ^ does not have this problem, but is also not compatible with older shells.
+
+
+
+![image](https://github.com/user-attachments/assets/1a567069-3ca1-456f-8669-5908965ebe7c)
 
 
 
