@@ -61,6 +61,7 @@ First we cd to /challenge/files directory. Then we can see what all files it con
 > If the first character in the brackets is a ! or (in newer versions of bash) a ^, the glob inverts, and that bracket instance matches characters that aren't listed.
 >
 > ![image](https://github.com/user-attachments/assets/13fc5b42-b316-48e9-bccf-73447421fb76)
+>
 > The ! character has a different special meaning in bash when it's not the first character of a [] glob, so keep that in mind if things stop making sense! ^ does not have this problem, but is also not compatible with older shells.
 
 
