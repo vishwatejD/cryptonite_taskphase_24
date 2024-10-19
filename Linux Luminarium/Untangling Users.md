@@ -61,5 +61,7 @@ When you input a password into su, it one-way-encrypts (hashes) it and compares 
 we first crack the password using john the ripper tool and use the password to su to zardus. Here we run the `/challenge/run` command to get the flag.
 ![image](https://github.com/user-attachments/assets/62a598a9-e70f-4553-a293-789bf6e4dc01)
 
-## 
+## Using sudo
+
+
 
