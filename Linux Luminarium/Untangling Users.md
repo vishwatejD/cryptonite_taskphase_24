@@ -63,5 +63,10 @@ we first crack the password using john the ripper tool and use the password to s
 
 ## Using sudo
 
+Unlike su, which defaults to launching a shell as a specified user, sudo defaults to running a command as root:
+![image](https://github.com/user-attachments/assets/1b55f954-9410-480e-8fb2-1d50514b5e5b)
+
+Since we are given superuser (sudo) priviliges, we can directly use the command `sudo cat /flag` to get the flag.
+![image](https://github.com/user-attachments/assets/13ec5f01-072c-4ee1-a99a-99641a88ac88)
 
 
