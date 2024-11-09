@@ -55,6 +55,32 @@ This gives us the flag.
 
 ![image](https://github.com/user-attachments/assets/b34be3c0-8224-44bf-9e91-8d6d47b99297)
 
+
+I also tried the java way to solve this challenge. Importing similar functions as given in the question, I wrote the following code to get the encrypted text.
+
+```java
+import java.util.Base64;
+import java.net.URLDecoder;
+
+public class Vaultdoor3{
+    public static void main(String[] args) {
+        String encoded = "JTYzJTMwJTZlJTc2JTMzJTcyJTc0JTMxJTZlJTY3JTVm"
+                       + "JTY2JTcyJTMwJTZkJTVmJTYyJTYxJTM1JTY1JTVmJTM2"
+                       + "JTM0JTVmJTY1JTMzJTMxJTM1JTMyJTYyJTY2JTM0";
+
+        
+        byte[] urlEncodedBytes = Base64.getDecoder().decode(encoded);
+        String urlEncoded = new String(urlEncodedBytes);
+
+        
+        String decodedPassword = URLDecoder.decode(urlEncoded);
+
+        System.out.println("Decoded password: " + decodedPassword);
+    }
+}
+
+```
+
 ## Learning outcomes:-
 
 1. What is URL Encryption?
