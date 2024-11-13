@@ -90,3 +90,6 @@ Here, 81,0 and 3 are loaded and stored and the above function is performed. In t
 
 Thus, 81 is first shifted 0 bits to the left, which is 81. Then divided by 3 =27. The hex value of 27 which is 1b is the flag.
 
+## Learning outcomes
+
+wzr- zero register always stores zero
