@@ -54,3 +54,5 @@ NONE
 ## Resources used:-
 
 https://guballa.gitlab.io/SubstitutionBreaker/cli.html
+
+I also had some issue during installation of subbreaker, I referred to https://stackoverflow.com/questions/75608323/how-do-i-solve-error-externally-managed-environment-every-time-i-use-pip-3
